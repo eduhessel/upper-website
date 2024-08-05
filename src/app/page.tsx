@@ -17,6 +17,7 @@ export default function Home() {
             <li><a href="#" className={styles.menuItem4}>AJUDA</a></li>
           </ul>
           <button className={styles.primaryButton}>ABRIR CONTA</button>
+          <button className={styles.menuHamburguer}><Image src={"hamburguer-icon.svg"} alt='seta-baixo' height={24} width={24}/></button>
         </div>
       </nav>
       <section className={styles.sectionHeader}>
@@ -28,7 +29,9 @@ export default function Home() {
           <h2 className={styles.h2}>Sua vida financeira, simplificada e poderosa</h2>
           <div className={styles.buttonsContainer}>
             <button className={styles.primaryButton}>ABRIR CONTA</button>
-            <button className={styles.terciaryButton}>BAIXE O NOSSO APP <Image src={"right-arrow-icon.svg"} alt='seta-direita' height={24} width={24}/></button>
+            <button className={styles.terciaryButton}>
+              BAIXE O NOSSO APP <Image src={"right-arrow-icon.svg"} alt='seta-direita' height={24} width={24}/>
+            </button>
           </div>
         </motion.div>
       </section>

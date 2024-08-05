@@ -40,6 +40,10 @@
     }
 }
 
+.menuHamburguer {
+    display: none;
+}
+
 .menuItem2{
     display: flex;
     gap: 10px;
@@ -110,6 +114,94 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .nav{
+        display: flex;
+        background-color: #272727;
+        text-decoration: none;
+        padding: 20px 16px;
+        width: 100%;
+        @apply justify-center;
+    }
+
+    .containerMenu{
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        @apply justify-between;
+    }
+
+    .containerMenu .primaryButton {
+        display: none;
+    }
+
+    .menuItem1,
+    .menuItem2,
+    .menuItem3,
+    .menuItem4{
+        display: none;
+    }
+
+    .menuHamburguer {
+        display: flex;
+    }
+
+    .sectionHeader{
+        display: flex;
+        padding: 0 16px;
+        @apply justify-center;
+    }
+
+    .containerHeader {
+        margin-top: 160px;
+    }
+
+    .h1{
+        font-size: 48px;
+        color: #FFFFFF;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .h2{
+        font-size: 24px;
+        color: #6C6C6C;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .buttonsContainer{
+        gap: 16px;
+        @apply flex flex-col items-center;
+    }
+
+    .primaryButton{
+        background-color: #007AFF;
+        color: #FFFFFF;
+        border-radius: 8px;
+        max-width: 251px;
+        min-width: 251px;
+        padding: 12px 0;
+    }
+
+    .terciaryButton{
+        background-color: transparent;
+        color: #FFFFFF;
+        border-radius: 8px;
+        max-width: 251px;
+        min-width: 251px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav{
         display: flex;
@@ -137,6 +229,10 @@
     .menuItem3,
     .menuItem4{
         display: none;
+    }
+
+    .menuHamburguer {
+        display: flex;
     }
 
     .sectionHeader{
