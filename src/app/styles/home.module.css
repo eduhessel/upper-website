@@ -1,0 +1,36 @@
+.nav{
+    display: flex;
+    background-color: #6C6C6C;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 100%;
+    @apply justify-center;
+}
+
+.containerMenu{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.textoNavbar {
+    display: flex;
+    color: white;
+    gap: 16px;
+}
+
+.primaryButton{
+    background-color: #007AFF;
+    color: #FFFFFF;
+    border-radius: 8px;
+    max-width: 200px;
+    min-width: 200px;
+    padding: 12px 0;
+}
+
+.h1{
+    font-size: 64px;
+    color: white;
+    text-align: center;
+}
