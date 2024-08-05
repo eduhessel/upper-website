@@ -22,7 +22,7 @@ export default function Home() {
           <h2 className={styles.h2}>Sua vida financeira, simplificada e poderosa</h2>
           <div className={styles.buttonsContainer}>
             <button className={styles.primaryButton}>ABRIR CONTA</button>
-            <button className={styles.terciaryButton}>BAIXE O NOSSO APP</button>
+            <button className={styles.terciaryButton}>BAIXE O NOSSO APP <Image src={"right-arrow-icon.svg"} alt='seta-direita' height={24} width={24}/></button>
           </div>
         </div>
       </section>
