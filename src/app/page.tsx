@@ -1,4 +1,7 @@
+'use client'
+
 import styles from '@/app/styles/home.module.css';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function Home() {
@@ -17,14 +20,17 @@ export default function Home() {
         </div>
       </nav>
       <section className={styles.sectionHeader}>
-        <div className={styles.containerHeader}>
+        <motion.div className={styles.containerHeader}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}>
           <h1 className={styles.h1}>O banco que leva você ao topo</h1>
           <h2 className={styles.h2}>Sua vida financeira, simplificada e poderosa</h2>
           <div className={styles.buttonsContainer}>
             <button className={styles.primaryButton}>ABRIR CONTA</button>
             <button className={styles.terciaryButton}>BAIXE O NOSSO APP <Image src={"right-arrow-icon.svg"} alt='seta-direita' height={24} width={24}/></button>
           </div>
-        </div>
+        </motion.div>
       </section>
     </main>
   );

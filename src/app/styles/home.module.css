@@ -1,10 +1,15 @@
 .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     background-color: #272727;
     text-decoration: none;
     padding: 20px 0;
     width: 100%;
-    @apply justify-center;
+    z-index: 1000;
+    border-color: #6C6C6C;
+    @apply justify-center border-b;
 }
 
 .containerMenu{
@@ -21,11 +26,16 @@
     gap: 48px;
 }
 
-.menuItem1{
+.menuItem1,
+.menuItem2,
+.menuItem3,
+.menuItem4
+{
     color: white;
     text-decoration: none;
     &:hover{
         color: #007AFF;
+        font-weight: 600;
         cursor: pointer;
     }
 }
@@ -33,30 +43,6 @@
 .menuItem2{
     display: flex;
     gap: 10px;
-    color: white;
-    text-decoration: none;
-    &:hover{
-        color: #007AFF;
-        cursor: pointer;
-    }
-}
-
-.menuItem3{
-    color: white;
-    text-decoration: none;
-    &:hover{
-        color: #007AFF;
-        cursor: pointer;
-    }
-}
-
-.menuItem4{
-    color: white;
-    text-decoration: none;
-    &:hover{
-        color: #007AFF;
-        cursor: pointer;
-    }
 }
 
 .sectionHeader{
@@ -68,7 +54,7 @@
 .containerHeader {
     max-width: 1000px;
     width: 100%;
-    margin-top: 106px;
+    margin-top: 190px;
 }
 
 .h1{
@@ -160,7 +146,7 @@
     }
 
     .containerHeader {
-        margin-top: 106px;
+        margin-top: 109px;
     }
 
     .h1{
