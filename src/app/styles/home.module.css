@@ -177,7 +177,7 @@
 
     .buttonsContainer{
         gap: 16px;
-        @apply flex flex-col items-center;
+        @apply flex items-center;
     }
 
     .primaryButton{
