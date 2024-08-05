@@ -1,6 +1,6 @@
 .nav{
     display: flex;
-    background-color: #6C6C6C;
+    background-color: #272727;
     text-decoration: none;
     padding: 20px 0;
     width: 100%;
@@ -12,12 +12,87 @@
     align-items: center;
     max-width: 1000px;
     width: 100%;
+    @apply justify-between;
 }
 
 .textoNavbar {
     display: flex;
     color: white;
-    gap: 16px;
+    gap: 48px;
+}
+
+.menuItem1{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: #007AFF;
+        cursor: pointer;
+    }
+}
+
+.menuItem2{
+    display: flex;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: #007AFF;
+        cursor: pointer;
+    }
+}
+
+.menuItem3{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: #007AFF;
+        cursor: pointer;
+    }
+}
+
+.menuItem4{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: #007AFF;
+        cursor: pointer;
+    }
+}
+
+.sectionHeader{
+    display: flex;
+    width: 100%;
+    @apply justify-center;
+}
+
+.containerHeader {
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 106px;
+}
+
+.h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.h2{
+    font-size: 32px;
+    color: #6C6C6C;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
 .primaryButton{
@@ -27,10 +102,21 @@
     max-width: 200px;
     min-width: 200px;
     padding: 12px 0;
+    &:hover{
+        background-color: #0056b3;
+        cursor: pointer;
+    }
 }
 
-.h1{
-    font-size: 64px;
-    color: white;
-    text-align: center;
+.terciaryButton{
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    max-width: 251px;
+    min-width: 251px;
+    padding: 12px 0;
+    &:hover{
+        background-color: #007AFF;
+        cursor: pointer;
+    }
 }
