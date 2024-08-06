@@ -1,5 +1,30 @@
+.navUp{
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #121212;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 1000;
+    border-color: #6C6C6C;
+    @apply justify-center border-b;
+    .menuItem1,
+    .menuItem2
+    {
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: #FFFFFF;
+            font-weight: 400;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
 .nav{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     display: flex;
@@ -34,7 +59,7 @@
     color: white;
     text-decoration: none;
     &:hover{
-        color: #007AFF;
+        color: var(--cor-primaria);
         font-weight: 600;
         cursor: pointer;
     }
@@ -61,24 +86,6 @@
     margin-top: 190px;
 }
 
-.h1{
-    font-size: 64px;
-    color: #FFFFFF;
-    font-weight: 600;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 32px;
-}
-
-.h2{
-    font-size: 32px;
-    color: #6C6C6C;
-    font-weight: 400;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 32px;
-}
-
 .buttonsContainer{
     display: flex;
     justify-content: center;
@@ -86,7 +93,7 @@
 }
 
 .primaryButton{
-    background-color: #007AFF;
+    background-color: var(--cor-primaria);
     color: #FFFFFF;
     border-radius: 8px;
     max-width: 200px;
@@ -94,6 +101,20 @@
     padding: 12px 0;
     &:hover{
         background-color: #0056b3;
+        cursor: pointer;
+    }
+}
+
+.secondaryButton{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: var(--cor-primaria) 2px solid;
+    border-radius: 8px;
+    max-width: 200px;
+    min-width: 200px;
+    padding: 12px 0;
+    &:hover{
+        background-color: var(--cor-primaria);
         cursor: pointer;
     }
 }
@@ -109,12 +130,100 @@
     gap: 10px;
     justify-content: center;
     &:hover{
-        background-color: #007AFF;
+        background-color: var(--cor-primaria);
         cursor: pointer;
     }
 }
 
+.sectionBemVindo{
+    display: flex;
+    width: 100%;
+    @apply justify-center;
+}
+
+.containerSectionBemVindo{
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.cardBemVindo{
+    background-color: #272727;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+}
+
+.cardContentBemVindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionNossaMissao{
+    display: flex;
+    width: 100%;
+    @apply justify-center;
+}
+
+.containerSectionNossaMissao{
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.cardNossaMissao{
+    width: 100%;
+    display: flex;
+}
+
+.cardNossaMissaoImage{
+    display: flex;
+    width: 400px;
+    height: 420px;
+    background-color: #2C2C2C;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.textContainerNossaMissao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    width: 600px;
+    height: 420px;
+    background-color: #272727;
+    border-radius: 0 8px 8px 0;
+}
+
 @media screen and (max-width: 1024px) {
+    .navUp{
+        top: 0;
+        left: 0;
+        display: flex;
+        background-color: #121212;
+        text-decoration: none;
+        padding: 20px 16px;
+        width: 100%;
+        z-index: 1000;
+        border-color: #6C6C6C;
+        @apply justify-center border-b;
+        .menuItem1,
+        .menuItem2
+        {
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: #FFFFFF;
+                font-weight: 400;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
     .nav{
         display: flex;
         background-color: #272727;
@@ -122,6 +231,12 @@
         padding: 20px 16px;
         width: 100%;
         @apply justify-center;
+        .menuItem1,
+        .menuItem2,
+        .menuItem3,
+        .menuItem4{
+            display: none;
+        }
     }
 
     .containerMenu{
@@ -130,17 +245,9 @@
         max-width: 100%;
         width: 100%;
         @apply justify-between;
-    }
-
-    .containerMenu .primaryButton {
-        display: none;
-    }
-
-    .menuItem1,
-    .menuItem2,
-    .menuItem3,
-    .menuItem4{
-        display: none;
+        .primaryButton {
+            margin-left: 332px;
+        }
     }
 
     .menuHamburguer {
@@ -181,7 +288,7 @@
     }
 
     .primaryButton{
-        background-color: #007AFF;
+        background-color: var(--cor-primaria);
         color: #FFFFFF;
         border-radius: 8px;
         max-width: 251px;
@@ -203,6 +310,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navUp{
+        display: none;
+    }
     .nav{
         display: flex;
         background-color: #272727;
@@ -269,7 +379,7 @@
     }
 
     .primaryButton{
-        background-color: #007AFF;
+        background-color: var(--cor-primaria);
         color: #FFFFFF;
         border-radius: 8px;
         max-width: 251px;
