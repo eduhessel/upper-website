@@ -3,8 +3,15 @@
 import styles from '@/app/styles/home.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <main>
       <nav className={styles.nav}>
@@ -20,6 +27,16 @@ export default function Home() {
           <button className={styles.menuHamburguer}><Image src={"hamburguer-icon.svg"} alt='seta-baixo' height={24} width={24}/></button>
         </div>
       </nav>
+      {modalOpen && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modalContent}>
+            {/* Conteúdo do seu modal */}
+            <h2>Meu Modal</h2>
+            <p>Conteúdo do modal aqui...</p>
+            <button onClick={toggleModal}>Fechar Modal</button>
+          </div>
+        </div>
+      )}
       <section className={styles.sectionHeader}>
         <motion.div className={styles.containerHeader}
         initial={{ opacity: 0, y: -20 }}
