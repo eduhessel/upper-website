@@ -16,6 +16,7 @@
         text-decoration: none;
         &:hover{
             color: #FFFFFF;
+            transition: color 0.3s ease;
             font-weight: 400;
             text-decoration: underline;
             cursor: pointer;
@@ -60,6 +61,7 @@
     text-decoration: none;
     &:hover{
         color: var(--cor-primaria);
+        transition: color 0.3s ease;
         font-weight: 600;
         cursor: pointer;
     }
@@ -101,6 +103,7 @@
     padding: 12px 0;
     &:hover{
         background-color: #0056b3;
+        transition: background-color 0.3s ease;
         cursor: pointer;
     }
 }
@@ -115,6 +118,7 @@
     padding: 12px 0;
     &:hover{
         background-color: var(--cor-primaria);
+        transition: background-color 0.3s ease;
         cursor: pointer;
     }
 }
@@ -131,6 +135,7 @@
     justify-content: center;
     &:hover{
         background-color: var(--cor-primaria);
+        transition: background-color 0.3s ease;
         cursor: pointer;
     }
 }
@@ -235,6 +240,39 @@
     width: 100%;
 }
 
+.cardSubMenu {
+    background-color: var(--background-level2);
+    border-radius: 8px;
+    border: var(--secondary-content-dark) 1px solid;
+    padding: 32px;
+    min-width: 232px;
+    max-width: 232px;
+    min-height: 208px;
+    height: 100%;
+    font-size: 14px;
+    color: var(--primary-content-dark);
+    gap: 24px;
+    @apply flex flex-col items-center justify-center;
+    &:hover{
+        background-color: var(--background);
+        transition: background-color 0.3s ease;
+        border: var(--cor-primaria) 1px solid;
+    }
+    .imageCardSubMenu{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.iconInfo{
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-content-dark);
+}
+
+.textInfo{
+    color: var(--secondary-content-dark);
+}
 @media screen and (max-width: 1024px) {
     .navUp{
         top: 0;

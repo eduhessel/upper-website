@@ -1,6 +1,7 @@
 'use client'
 
 import styles from '@/app/styles/home.module.css';
+import { InformationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
@@ -51,8 +52,12 @@ export default function Home() {
           <button className={styles.menuHamburguer}><Image src={"hamburguer-icon.svg"} alt='seta-baixo' height={24} width={24} /></button>
         </div>
       </nav>
+      {/* Modal Tem no Upper*/}
       {isSubmenuOpen && (
-        <div className={styles.submenu}>
+        <motion.div className={styles.submenu}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}>
           <div className={styles.submenuContent}>
             <div className='flex items-center justify-between'>
               <p className='text-xl pb-4'>Tem no Upper</p>
@@ -60,18 +65,48 @@ export default function Home() {
             </div>
             <div className='mb-8'>
               <h3>Produtos e Serviços UPPER</h3>
-              <div className='flex'>
+              {/* Cards fileira 1 */}
+              <div className='flex gap-4 flex-wrap'>
                 <div className='flex flex-col'>
-                  <button className='flex flex-col items-center justify-center'>
-                    <Image src={"x-icon.svg"} alt='seta-baixo' height={24} width={24} />
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
                     <p>Conta Digital com Serviços Transacionais</p>
+                  </button>
+                </div>
+                <div className='flex flex-col'>
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
+                    <p>Serviços de Investimentos em Criptos, CCBs e NCs</p>
+                  </button>
+                </div>
+                <div className='flex flex-col'>
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
+                    <p>Fundo Crypto</p>
+                  </button>
+                </div>
+                <div className='flex flex-col'>
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
+                    <p>Token UPPER</p>
+                  </button>
+                </div>
+                <div className='flex flex-col'>
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
+                    <p>Cursos Profissionalizantes na Plataforma do CEBRAC</p>
+                  </button>
+                </div>
+                <div className='flex flex-col'>
+                  <button className={styles.cardSubMenu}>
+                    <XMarkIcon className={styles.imageCardSubMenu} />
+                    <p>Por que Escolher a UPPER?</p>
                   </button>
                 </div>
               </div>
             </div>
-            <span>Este conteúdo destaca os principais produtos e serviços oferecidos pela UPPER, destacando benefícios e oportunidades para seus clientes.</span>
           </div>
-        </div>
+        </motion.div>
       )}
       <section className={styles.sectionHeader}>
         <motion.div className={styles.containerHeader}
