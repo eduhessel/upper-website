@@ -154,6 +154,11 @@
     display: flex;
 }
 
+.imagemCardBemVindo{
+    width: 100%;
+    height: 100%;
+}
+
 .cardContentBemVindo{
     display: flex;
     flex-direction: column;
@@ -175,6 +180,12 @@
 .cardNossaMissao{
     width: 100%;
     display: flex;
+}
+
+.imagemCardNossaMissao{
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
 }
 
 .cardNossaMissaoImage{
@@ -246,7 +257,7 @@
         width: 100%;
         @apply justify-between;
         .primaryButton {
-            margin-left: 332px;
+            margin-left: 0;
         }
     }
 
@@ -397,5 +408,84 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+    }
+
+    .sectionBemVindo{
+        display: flex;
+        width: 100%;
+    }
+
+    .containerSectionBemVindo{
+        width: 100%;
+        margin-top: 64px;
+    }
+
+    .cardBemVindo{
+        background-color: #272727;
+        border-radius: 8px;
+        padding: 32px;
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        .primaryButton{
+            background-color: var(--cor-primaria);
+            color: var(--white);
+            border-radius: 8px;
+            min-width: 100%;
+            padding: 12px 0;
+        }
+    }
+
+    .imagemCardBemVindo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardContentBemVindo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionNossaMissao{
+        display: flex;
+        width: 100%;
+    }
+
+    .containerSectionNossaMissao{
+        width: 100%;
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .cardNossaMissao{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardNossaMissaoImage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 32px 0;
+        background-color: #2C2C2C;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .textContainerNossaMissao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #272727;
+        border-radius: 0 0 8px 8px;
     }
 }

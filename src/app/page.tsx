@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function Home() {
 
   return (
-    <main>
+    <main className={"flex flex-col min-h-screen w-full"}>
       <nav className={styles.navUp}>
         <div className={styles.containerMenu}>
           <ul className={styles.textoNavbar}>
@@ -51,7 +51,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
           <div className={styles.cardBemVindo}>
-            <Image src={"image-bem-vindo.svg"} alt={'2 iphones com imagens do aplicativo'} width={393} height={412}/>
+            <Image src={"image-bem-vindo.svg"} alt={'2 iphones com imagens do aplicativo'} className={styles.imagemCardBemVindo} width={0} height={0}/>
             <div className={styles.cardContentBemVindo}>
               <h3>Bem-vindo ao Upper</h3>
               <span>No Upper, acreditamos que o futuro das finanças é digital e acessível a todos. Somos um banco digital inovador, criado com o propósito de transformar a maneira como você gerencia seu dinheiro e investe no seu futuro. Combinando tecnologia de ponta e uma abordagem centrada no cliente, oferecemos uma plataforma completa de serviços financeiros e educação para empoderar você a tomar as melhores decisões financeiras.</span>
@@ -68,7 +68,7 @@ export default function Home() {
           <h2>Resolva sua vida financeira em poucos cliques</h2>
           <div className={styles.cardNossaMissao}>
             <div className={styles.cardNossaMissaoImage}>
-              <Image src={"image-nossa-missao.svg"} alt='Imagem referente à sessão nossa missão' width={336} height={356}/>
+              <Image src={"image-nossa-missao.svg"} alt='Imagem referente à sessão nossa missão' className={styles.imagemCardNossaMissao} width={0} height={0}/>
             </div>
             <div className={styles.textContainerNossaMissao}>
               <h3>Nossa Missão</h3>
