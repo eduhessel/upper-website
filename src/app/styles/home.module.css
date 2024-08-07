@@ -273,6 +273,38 @@
 .textInfo{
     color: var(--secondary-content-dark);
 }
+
+.sectionExperienciaTransparente{
+    display: flex;
+    width: 100%;
+    @apply justify-center items-center;
+}
+
+.containerSectionExperienciaTransparente{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 64px;
+    @apply justify-center items-center;
+}
+
+.cardExperienciaTransparenteContent{
+    background-color: var(--background-level2);
+    border: var(--secondary-content-dark) solid 1px;
+    margin-bottom: 32px;
+    @apply flex flex-col max-w-[312px] items-center gap-4 p-[32px] rounded-lg;
+    &:hover{
+        background-color: var(--background);
+        transition: background-color 0.3s ease;
+        border: var(--cor-primaria) 1px solid;
+    }
+}
+
+.containerCardExperienciaTransparente{
+    @apply flex gap-4 justify-center
+}
+
 @media screen and (max-width: 1024px) {
     .navUp{
         top: 0;
@@ -550,5 +582,16 @@
         height: 100%;
         background-color: #272727;
         border-radius: 0 0 8px 8px;
+    }
+
+    .cardExperienciaTransparenteContent{
+        background-color: var(--background-level2);
+        border: var(--secondary-content-dark) solid 1px;
+        margin-bottom: 32px;
+       @apply flex flex-col max-w-[312px] items-center gap-4 p-[32px] rounded-lg
+    }
+
+    .containerCardExperienciaTransparente{
+        @apply flex flex-col justify-center
     }
 }
