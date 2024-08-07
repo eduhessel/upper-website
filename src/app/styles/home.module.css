@@ -257,6 +257,7 @@
         background-color: var(--background);
         transition: background-color 0.3s ease;
         border: var(--cor-primaria) 1px solid;
+        transition: border 0.3s ease;
     }
     .imageCardSubMenu{
         width: 80px;
@@ -325,7 +326,7 @@
         display: flex;
         background-color: #121212;
         text-decoration: none;
-        padding: 20px 16px;
+        padding: 20px 64px;
         width: 100%;
         z-index: 1000;
         border-color: #6C6C6C;
@@ -347,7 +348,7 @@
         display: flex;
         background-color: #272727;
         text-decoration: none;
-        padding: 20px 16px;
+        padding: 20px 64px;
         width: 100%;
         @apply justify-center;
         .menuItem1,
@@ -425,6 +426,37 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+    }
+
+    .sectionBemVindo{
+        display: flex;
+        width: 100%;
+        padding: 0 64px;
+        @apply justify-center;
+    }
+
+    .cardBemVindo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagemCardBemVindo{
+        width: 200px;
+        margin-right: 24px;
+    }
+
+    .sectionNossaMissao{
+        display: flex;
+        width: 100%;
+        padding: 0 64px;
+    }
+
+    .containerSectionNossaMissao{
+        width: 100%;
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .cardExperienciaTransparenteContent{
