@@ -305,6 +305,19 @@
     @apply flex gap-4 justify-center
 }
 
+.closeButtonIcon{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--background-level2);
+    border-radius: 3px;
+    &:hover{
+      background-color: var(--background);
+      transition: background-color 0.3s ease;
+      border: 1px solid var(--cor-primaria);
+      transition: border 0.3s ease;
+    }
+  }
+
 @media screen and (max-width: 1024px) {
     .navUp{
         top: 0;
@@ -412,6 +425,17 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+    }
+
+    .cardExperienciaTransparenteContent{
+        background-color: var(--background-level2);
+        border: var(--secondary-content-dark) solid 1px;
+        margin-bottom: 24px;
+        @apply flex flex-col max-w-[312px] items-center p-[32px] rounded-lg
+    }
+
+    .containerCardExperienciaTransparente{
+        @apply flex flex-col justify-center
     }
 }
 
@@ -587,8 +611,8 @@
     .cardExperienciaTransparenteContent{
         background-color: var(--background-level2);
         border: var(--secondary-content-dark) solid 1px;
-        margin-bottom: 32px;
-       @apply flex flex-col max-w-[312px] items-center gap-4 p-[32px] rounded-lg
+        margin-bottom: 24px;
+        @apply flex flex-col max-w-[312px] items-center p-[32px] rounded-lg
     }
 
     .containerCardExperienciaTransparente{

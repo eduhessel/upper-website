@@ -61,7 +61,7 @@ export default function Home() {
           <div className={styles.submenuContent}>
             <div className='flex items-center justify-between'>
               <p className='text-xl pb-4'>Tem no Upper</p>
-              <button onClick={closeSubmenu}><Image src={"x-icon.svg"} alt='seta-baixo' height={24} width={24} /></button>
+              <button onClick={closeSubmenu} className={styles.closeButtonIcon}><Image src={"x-icon.svg"} alt='seta-baixo' height={24} width={24} /></button>
             </div>
             <div className='mb-8'>
               <h3>Produtos e Serviços UPPER</h3>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className={styles.containerCardExperienciaTransparente}>
             <div className={styles.cardExperienciaTransparenteContent}>
               <div className='w-[80px] h-[80px] bg-transparent border-white border-solid border rounded-full flex justify-center items-center'>
-                <CurrencyDollarIcon className='max-w-[56px] text-white stroke-1'/>
+                <CurrencyDollarIcon className='max-w-[56px] min-w-[56px] text-white stroke-1'/>
               </div>
               <div className='flex flex-col text-white gap-2'>
                 <p className='font-normal'>Serviços Bancários Completos</p>
@@ -173,7 +173,7 @@ export default function Home() {
             </div>
             <div className={styles.cardExperienciaTransparenteContent}>
               <div className='w-[80px] h-[80px] bg-transparent border-white border-solid border rounded-full flex justify-center items-center'>
-                <ChartBarIcon className='max-w-[56px] text-white stroke-1'/>
+                <ChartBarIcon className='max-w-[56px] min-w-[56px] text-white stroke-1'/>
               </div>
               <div className='flex flex-col text-white gap-2'>
                 <p className='font-normal'>Investimentos Diversificados</p>
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
             <div className={styles.cardExperienciaTransparenteContent}>
               <div className='w-[80px] h-[80px] bg-transparent border-white border-solid border rounded-full flex justify-center items-center'>
-                <AcademicCapIcon className='max-w-[56px] text-white stroke-1'/>
+                <AcademicCapIcon className='max-w-[56px] min-w-[56px] text-white stroke-1'/>
               </div>
               <div className='flex flex-col text-white gap-2'>
                 <p className='font-normal'>Educação Financeira</p>
