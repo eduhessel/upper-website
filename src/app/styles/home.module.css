@@ -564,6 +564,7 @@
     .sectionBemVindo{
         display: flex;
         width: 100%;
+        padding: 0 0;
     }
 
     .containerSectionBemVindo{
@@ -601,6 +602,7 @@
     .sectionNossaMissao{
         display: flex;
         width: 100%;
+        padding: 0 0;
     }
 
     .containerSectionNossaMissao{
