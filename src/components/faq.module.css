@@ -1,0 +1,12 @@
+.containerFaq{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    gap: 32px;
+}
+
+.faqButton {
+    width: 100%;
+    text-align: left;
+}

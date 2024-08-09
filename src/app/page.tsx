@@ -1,6 +1,9 @@
 'use client'
 
 import styles from '@/app/styles/home.module.css';
+import Faq from '@/components/faq';
+import Footer from '@/components/footer';
+import CardsNossosValores from '@/components/home/cards-nossos-valores';
 import ContainerBemVindo from '@/components/home/container-bem-vindo';
 import ContainerExperienciaTransparente from '@/components/home/container-experiencia-transparente';
 import ContainerJunteseANos from '@/components/home/container-juntese-a-nos';
@@ -138,10 +141,23 @@ export default function Home() {
         </section>
         <section className={styles.sectionNossaMissao}>
           <div className='flex flex-col gap-8'>
+            <h2>Resolva sua vida financeira em poucos cliques</h2>
             <ContainerNossaMissao />
             <ContainerJunteseANos/>
           </div>
         </section>
+        <section className={styles.sectionNossosValores}>
+          <div className='flex flex-col gap-8'>
+            <h2>Nossos valores</h2>
+            <CardsNossosValores/>
+          </div>
+        </section>
+        <section className={styles.sectionFaq}>
+          <Faq/>
+        </section>
+        <footer className={styles.sectionFooter}>
+          <Footer/>
+        </footer>
       </div>
     </main>
   );

@@ -1,0 +1,25 @@
+.containerNossosValores{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 16px;
+}
+
+.spanTitle{
+    color: var(--primary-content-dark);
+}
+
+.card{
+    background-color: var(--background-level2);
+    padding: 32px 24px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-content-dark);
+    @apply flex flex-col items-center justify-center;
+    &:hover{
+        background-color: var(--background);
+        border: 1px solid var(--cor-primaria);
+    }
+}

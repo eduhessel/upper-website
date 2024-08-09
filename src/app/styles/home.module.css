@@ -178,9 +178,21 @@
     @apply justify-center;
 }
 
+.sectionNossosValores{
+    display: flex;
+    width: 100%;
+    @apply justify-center;
+}
+
 .containerSectionNossaMissao{
     max-width: 1000px;
     width: 100%;
+}
+
+.sectionFaq{
+    display: flex;
+    width: 100%;
+    @apply justify-center;
 }
 
 .cardNossaMissao{

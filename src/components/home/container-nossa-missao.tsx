@@ -10,7 +10,6 @@ export default function ContainerNossaMissao(){
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}>
-            <h2>Resolva sua vida financeira em poucos cliques</h2>
             <div className={styles.cardNossaMissao}>
                 <div className={styles.cardNossaMissaoImage}>
                 <Image src={"image-nossa-missao.svg"} alt='Imagem referente à sessão nossa missão' className={styles.imagemCardNossaMissao} width={0} height={0} />
